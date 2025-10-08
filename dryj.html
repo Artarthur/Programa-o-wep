@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:  #6C7A89;
+        margin: 0;
+        padding: 20px;
+    }
+    h1{
+        text-shadow: 0px 0px 10px;
+        text-align: center;
+    }
+    div.container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        margin: auto;
+    }
+   
+</style>
+<body>
+    
+   <div class="container"> 
+    <h1> Formulario</h1>
+    <form action="#">
+        <label for="name"> seu nome:</label><br>
+        <input type="text" id="name" name="name" required max="30" min="2"><br>
+        <label for="endereco">seu endereço:</label><br>
+        <input type="text" id="endereco" name="endereco" required> <br>
+        <label for="idade"> sua idade:</label> <br>
+        <input type="number" id="idade" name="idade" required><br>
+        <label for="telefone"> seu telefone</label><br>
+        <input type="number" name="telefone" id="telefone"><br>
+        <button type="submit" value="submit"> envio</button>
+    </form>
+</div>
+</body>
+</html>
