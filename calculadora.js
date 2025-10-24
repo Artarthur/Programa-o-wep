@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const port = 8080
 app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (request, response) => {
@@ -20,8 +21,8 @@ app.get('/soma', (req, res) => {
 })
 
 app.get('/subtracao', (req, res) => {
-    console.log('n1=' - req.query.n1 )
-    console.log('n2=' - req.query.n2 )
+    console.log('n1=' + req.query.n1 )
+    console.log('n2=' + req.query.n2 )
     result = parseFloat(req.query.n1) - parseFloat(req.query.n2)
     if (isNaN(result)){
         result = "isso não e um numero."
@@ -32,8 +33,8 @@ app.get('/subtracao', (req, res) => {
 })
 
 app.get('/multiplicacao', (req, res) => {
-    console.log('n1=' * req.query.n1 )
-    console.log('n2=' * req.query.n2 )
+    console.log('n1=' + req.query.n1 )
+    console.log('n2=' + req.query.n2 )
     result = parseFloat(req.query.n1) * parseFloat(req.query.n2)
     if (isNaN(result)){
         result = "isso não e um numero."
@@ -45,8 +46,8 @@ app.get('/multiplicacao', (req, res) => {
 
 
 app.get('/divisao', (req, res) => {
-    console.log('n1=' / req.query.n1 )
-    console.log('n2=' / req.query.n2 )
+    console.log('n1=' + req.query.n1 )
+    console.log('n2=' + req.query.n2 )
     result = parseFloat(req.query.n1) / parseFloat(req.query.n2)
     if (isNaN(result)){
         result = "isso não e um numero."
